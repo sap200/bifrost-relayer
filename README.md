@@ -1,6 +1,8 @@
 # bifrost-relayer
 
+<p align="center">
 ![bifrost-relayer](./bifrost_relayer.gif)
+ </p>
 
 This is a bifrost relayer that transmits that continuously watches tezos contract storage and relays it to bifrost zone.
 
