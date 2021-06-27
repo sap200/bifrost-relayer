@@ -16,7 +16,7 @@ $ go install
 ```
 
 ```
-bifrost-relayer
+$ bifrost-relayer
 ```
 
 This will start the relayer 
