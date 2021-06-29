@@ -71,6 +71,6 @@ func UnlockTokens(contract string, key string, address string, amount uint64) []
 
 func MintFa12Cosmos(contract string, key string, address string, amount uint64) []string {
 	arg := fmt.Sprintf("(Right (Left (Left (Pair \"%s\" %v))))", address, amount)
-	cmd1 := []string{"tezos-client", "-w", FinalityThreshold, "transfer", "0", "from", key, "to", contract, "--fee", "1", "--arg", arg}
+	cmd1 := []string{"tezos-client", "-w", FinalityThreshold, "transfer", "0", "from", key, "to", contract, "--fee", "1", "--arg", arg, "--burn-cap", "0.019"}
 	return cmd1
 }
