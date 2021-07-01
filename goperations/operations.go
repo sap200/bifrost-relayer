@@ -121,6 +121,8 @@ func unlockTezos(address string, amount uint64) (bool, string, string) {
 	cmd.Stderr = &err1
 	cmd.Run()
 
+	// fmt.Println(out1.String())
+	// fmt.Println(err1.String())
 
 
 	if &err1 != nil && (strings.Contains(err1.String(), BURNFAILFLAG1) || strings.Contains(err1.String(), BURNFAILFLAG2)) {

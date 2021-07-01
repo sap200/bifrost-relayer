@@ -65,7 +65,7 @@ func CreateKeyPair() []string {
 
 func UnlockTokens(contract string, key string, address string, amount uint64) []string {
 	arg := fmt.Sprintf("(Right (Left (Pair \"%s\" %v)))", address, amount)
-	cmd1 := []string{"tezos-client", "transfer", "0", "from", key, "to", contract, "--fee", "1", "--arg", arg, "--burn-cap", "0.00025"}
+	cmd1 := []string{"tezos-client", "-w", FinalityThreshold, "transfer", "0", "from", key, "to", contract, "--fee", "1", "--arg", arg, "--burn-cap", "0.00025"}
 	return cmd1
 }
 

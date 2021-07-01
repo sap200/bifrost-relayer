@@ -12,5 +12,5 @@ const BURNFAILFLAG2 = "FAILWITH"
 const MINTFAILFLAG1 = "failed"
 const MINTFAILFLAG2 = "FAILWITH"
 
-const BURNSUCCESSFLAG = "The operation has only been included 0 blocks ago."
+const BURNSUCCESSFLAG = "The operation has only been included 5 blocks ago."
 const MINTSUCCESSFLAG = "The operation has only been included 5 blocks ago."

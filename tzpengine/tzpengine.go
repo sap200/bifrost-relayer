@@ -27,7 +27,6 @@ func getTezosOwner(slice []string) string {
 }
 
 func GetCosmosTxs(slice []string) []TxsCosmos {
-
 	txSlice := []TxsCosmos{}
 	for i, v := range slice {
 		if v == "Elt" {
